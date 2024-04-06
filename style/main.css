@@ -1,0 +1,67 @@
+/* design system */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  /* colors */
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+
+  /* text configuration */
+  --body-font: "Outfit";
+  ---body-font-weight: 400;
+  --body-font-size: 0.938rem;
+
+  --title-font: "Outfit";
+  --title-font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-gray);
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  font-weight: var(---body-font-weight);
+}
+
+.card {
+  width: 20rem;
+  height: 31.063rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border-radius: 1.25rem;
+  margin-top: 4rem;
+}
+.card__content {
+  margin: 1rem;
+  text-align: center;
+}
+.card__image {
+  width: 18rem;
+  height: 18rem;
+  margin: 1rem;
+  border-radius: 1.25rem;
+}
+.card__title {
+  font-weight: var(--title-font-weight);
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+}
+
+/* media query */
+@media (max-width: 375px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+}
