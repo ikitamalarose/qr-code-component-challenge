@@ -38,7 +38,7 @@ body {
   flex-direction: column;
   background: var(--white);
   border-radius: 1.25rem;
-  margin-top: 4rem;
+  margin-top: 7rem;
 }
 .card__content {
   margin: 1rem;
